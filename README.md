@@ -25,3 +25,11 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## Variables de entorno
+
+Para cargar las variables de entorno:
+1. Run `ng g environments`
+2. Modifica el nombre de `environment.development.ts` a `environment.<stage-deseado>.ts`
+3. Mueve el campo `fileReplacements` del stage de development en `angular.json`, ya que el comando anterior solo crea el archivo para
+desarrollo.
